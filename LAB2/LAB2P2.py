@@ -107,8 +107,8 @@ def main():
         rows[i].pop(0);
         rows[i].append(val)
     
-    rate=0.1
-    count=200
+    rate=0.01
+    count=2000
     size=len(rows[0])
     #print(len(rows[0]))
     #weight=train_weights(rows,rate,count,size)
@@ -148,12 +148,3 @@ def main():
     
 if __name__=='__main__':
     main()
-
-    
-
-
-    
-
-
-
-        
