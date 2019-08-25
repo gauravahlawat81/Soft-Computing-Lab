@@ -151,7 +151,7 @@ def main():
     for i in accuracy:
         print(i)
         sum=sum+i;
-    print("\nAccuracy of {}- fold naive bayes classifier is:{}".format(k,sum/k))
+    print("\nAccuracy of {}- fold  Single Layer Perceptron is:{}".format(k,sum/k))
     
 if __name__=='__main__':
     main()
