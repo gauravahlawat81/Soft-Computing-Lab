@@ -57,6 +57,7 @@ def train_weights(train,rate,count,size,test):
     for row in test:
         ll=ll+1
         prediction=predict(weight,row,size)
+        #print("Expected {} and predcited {}".format(row[size-1],prediction))
         if(prediction==row[size-1]):
             count=count+1
     
@@ -127,8 +128,8 @@ def main():
     
    # print(rows)
     
-    rate=0.1
-    count=20
+    rate=0.5
+    count=1000
     size=len(rows[0])
     #print(len(rows[0]))
     #weight=train_weights(rows,rate,count,size)
@@ -168,12 +169,3 @@ def main():
     
 if __name__=='__main__':
     main()
-
-    
-
-
-    
-
-
-
-        
